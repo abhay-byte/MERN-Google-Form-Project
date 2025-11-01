@@ -2,21 +2,11 @@
 
 A full-stack feedback application built with React, Express, and MongoDB.
 
-## 📺 Project
-
-This project created by **baljinder1994**. I've added Docker support for MongoDB and created an automated setup script for easier deployment.
-
-**Original Tutorial:**
+## 📺 Project Tutorial
 
 [![MERN Stack Google Form Project](https://i1.ytimg.com/vi/g0LflsaiYbg/hqdefault.jpg)](https://www.youtube.com/watch?v=g0LflsaiYbg)
 
-**Original Repository:** [baljinder1994/MERN-Google-Form-Project](https://github.com/baljinder1994/MERN-Google-Form-Project)
-
-### 🆕 What I Added:
-- Docker Compose setup for MongoDB
-- Automated `run.bat` script for Windows
-- Comprehensive README with setup instructions
-- Environment configuration documentation
+**Watch the complete tutorial:** [MERN Stack Google Form Project](https://www.youtube.com/watch?v=g0LflsaiYbg)
 
 ## 📋 Prerequisites
 
@@ -27,8 +17,7 @@ Before running this project, ensure you have the following installed:
 - **Git** (optional) - [Download](https://git-scm.com/)
 
 
-
-## Quick Start (Windows)
+## 🚀 Quick Start (Windows)
 
 ### Automated Setup
 
@@ -122,6 +111,19 @@ docker-compose logs mongodb    # View MongoDB logs
 docker-compose down -v         # Stop and remove volumes (deletes data)
 ```
 
+## 🔧 Troubleshooting
+
+### Docker Issues
+- **Docker not running**: Start Docker Desktop and wait for it to fully initialize
+- **Port 27017 in use**: Stop any existing MongoDB instances or change the port in `docker-compose.yml`
+
+### Backend Issues
+- **Cannot connect to MongoDB**: Ensure Docker container is running with `docker ps`
+- **Port already in use**: Change the port in your backend configuration
+
+### Frontend Issues
+- **Dependencies not installing**: Delete `node_modules` and `package-lock.json`, then run `npm install` again
+- **Build errors**: Ensure Node.js version is 16 or higher
 
 ## 📝 Environment Variables
 
@@ -141,25 +143,14 @@ MONGODB_URI=mongodb://localhost:27017/feedback-app
    docker-compose down
    ```
 
-## 📄 License
-
-This project is private and not licensed for public use.
-
-## 🙏 Credits
-
-**Original Creator:** [baljinder1994](https://github.com/baljinder1994)
-- Original Repository: [MERN-Google-Form-Project](https://github.com/baljinder1994/MERN-Google-Form-Project)
-- YouTube Tutorial: [Watch Here](https://www.youtube.com/watch?v=g0LflsaiYbg)
-
-**Fork Contributions:**
-- Docker Compose integration for MongoDB
-- Automated Windows setup script
-- Enhanced documentation
-
 ## 🤝 Contributing
 
-This is a fork of the original project. For contributions to the original project, please visit the original repository. For Docker/setup script improvements, feel free to submit issues or pull requests to this fork.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ## 📧 Support
 
-For issues or questions, please contact the development team.
+For issues or questions, please open an issue on GitHub.
